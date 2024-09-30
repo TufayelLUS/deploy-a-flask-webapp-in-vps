@@ -70,7 +70,7 @@ Now we will restart the nginx server
 <pre>sudo systemctl restart nginx</pre>
 
 # 6. Setting up gunicorn and deploying our server
-For Django tutorial, check <a href="https://docs.gunicorn.org/en/latest/deploy.html">Official Gunicorn Tutorial</a><br>
+For Django tutorial, check <a href="https://docs.gunicorn.org/en/latest/deploy.html" target="_blank">Official Gunicorn Tutorial</a><br>
 For Flask, go to the main folder where your app.py or the main python file is. Create a file named <code>wsgi.py</code> and place this
 <pre>
 from app import app
