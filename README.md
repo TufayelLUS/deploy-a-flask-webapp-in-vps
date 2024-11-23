@@ -52,12 +52,12 @@ Note down the login and user information or alter it according to how you want i
 # 5. Configuring the server proxy to listen to the Flask port
 First, get the server IP address. We'll create a configuration file for the proxy server first. Let's run this command
 <pre>sudo nano /etc/nginx/sites-enabled/"server IP here"</pre>
-This will open an editor. Paste this code inside (replace <YOUR INSTANCE IP> with your server IP)
+This will open an editor. Paste this code inside (replace &lt;YOUR INSTANCE IP&gt; with your server IP)
 <pre>
 server {
     listen 80;
     listen [::]:80;
-    server_name <YOUR INSTANCE IP>;
+    server_name &lt;YOUR INSTANCE IP&gt;;
         
     location / {
         proxy_pass http://127.0.0.1:5000;
