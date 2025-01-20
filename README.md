@@ -104,11 +104,11 @@ run the command
 <pre>sudo nginx -t</pre>
 <pre>sudo systemctl restart nginx</pre>
 <pre>sudo ufw allow 'Nginx Full'</pre>
-<pre>gunicorn --bind 0.0.0.0:5000 wsgi:app --daemon</pre>
+<pre>gunicorn --workers 3 --bind 0.0.0.0:5000 wsgi:app --daemon</pre>
 And we're done! Your website is running perfectly.<br>
 To stop and restart your flask app after any changes, run this command after coming to the folder where you have your <code>wsgi.py</code> file
 <pre>sudo pkill -f gunicorn</pre>
-<pre>gunicorn --bind 0.0.0.0:5000 wsgi:app --daemon</pre>
+<pre>gunicorn --workers 3 --bind 0.0.0.0:5000 wsgi:app --daemon</pre>
 
 Thanks for reading. If this helps, please star this repository and share it with your friends.<br>
 If you need a developer to deploy your web app, reach out to me @ <a href="https://www.fiverr.com/thechoyon">Fiverr</a>
